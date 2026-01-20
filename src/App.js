@@ -33,7 +33,7 @@ function App() {
         {/* Smart Root Redirect */}
         <Route path="/" element={<RootRedirect />} />
         {/* Fallback for other routes to Dashboard (as they are not implemented yet) */}
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </Router>
   );
