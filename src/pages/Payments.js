@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoInformationCircle, IoOpenOutline } from 'react-icons/io5';
 import LayoutComponent from '../components/Layout';
-import { Colors, Layout, Shadows } from '../theme';
+import { Colors, Shadows } from '../theme';
 
 const Payments = () => {
   const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;

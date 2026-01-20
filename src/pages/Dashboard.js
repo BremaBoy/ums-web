@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { IoCheckmarkCircle, IoMedal, IoBook, IoCard, IoMegaphone } from 'react-icons/io5';
+import { IoMegaphone } from 'react-icons/io5';
 import HeaderCard from '../components/HeaderCard';
 import DashboardCard from '../components/DashboardCard';
 import LayoutComponent from '../components/Layout';
@@ -9,6 +9,8 @@ import { supabase } from '../lib/supabase';
 import MissingInfoModal from '../components/MissingInfoModal';
 import LoadingSpinner from '../components/LoadingSpinner';
 
+const REQUIRED_FIELDS = ['phone_number', 'level'];
+
 const Dashboard = () => {
     const navigate = useNavigate();
     const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -16,7 +18,7 @@ const Dashboard = () => {
 
     const [user, setUser] = useState(null);
     const [announcements, setAnnouncements] = useState([]);
-    const [overview, setOverview] = useState({ courses: 0, attendance: 85, gpa: 4.25 });
+    const [overview] = useState({ courses: 0, attendance: 85, gpa: 4.25 });
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -66,7 +68,6 @@ const Dashboard = () => {
     }, [navigate]);
 
     // --- Missing Info Logic ---
-    const REQUIRED_FIELDS = ['phone_number', 'level'];
     const [missingFields, setMissingFields] = useState([]);
     const [showMissingModal, setShowMissingModal] = useState(false);
 

@@ -1,11 +1,10 @@
 import React from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { IoHome, IoBook, IoCard, IoMedal, IoPerson, IoLogOut } from 'react-icons/io5';
-import { Colors, Shadows } from '../theme';
+import { Colors } from '../theme';
 import { supabase } from '../lib/supabase';
 
 const LayoutComponent = ({ children }) => {
-  const location = useLocation();
   const navigate = useNavigate();
   const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const theme = isDark ? Colors.dark : Colors.light;

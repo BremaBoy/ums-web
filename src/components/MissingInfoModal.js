@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { IoClose, IoSaveOutline, IoWarning } from 'react-icons/io5';
-import { Colors, Layout, Shadows } from '../theme';
+import { IoWarning } from 'react-icons/io5';
+import { Colors, Shadows } from '../theme';
 import { supabase } from '../lib/supabase';
 
 const MissingInfoModal = ({ isOpen, missingFields, onSave, onClose }) => {
