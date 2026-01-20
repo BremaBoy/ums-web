@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { IoHome, IoBook, IoCard, IoMedal, IoPerson, IoLogOut } from 'react-icons/io5';
 import { Colors } from '../theme';
 import { supabase } from '../lib/supabase';
