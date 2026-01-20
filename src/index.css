@@ -1,3 +1,29 @@
+:root {
+  /* Light Theme */
+  --bg-background: #FFFFFF;
+  --bg-card: #F9FAFB;
+  --text-primary: #000000;
+  --text-secondary: #4B5563;
+  --primary: #002147;
+  --accent: #D97706;
+  --border: #E5E7EB;
+  --success: #10B981;
+  --error: #EF4444;
+}
+
+[data-theme='dark'] {
+  /* Dark Theme */
+  --bg-background: #0F172A;
+  --bg-card: #1E293B;
+  --text-primary: #FFFFFF;
+  --text-secondary: #9CA3AF;
+  --primary: #4A90E2;
+  --accent: #FBBF24;
+  --border: #334155;
+  --success: #34D399;
+  --error: #F87171;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +31,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-background);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherits;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
 }
