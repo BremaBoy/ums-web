@@ -198,7 +198,7 @@ const Login = () => {
       <div style={styles.content}>
         <div style={styles.header}>
             {/* Placeholder for logo - assuming it's in public/assets or similar, check usage in mobile */}
-           <img src="/logo.png" alt="LASU Logo" style={styles.logo} onError={(e) => { e.target.style.display = 'none'; }}/> 
+           <img src="/assets/lasu-logo.png" alt="LASU Logo" style={styles.logo} onError={(e) => { e.target.style.display = 'none'; }}/> 
           <h1 style={styles.welcomeText}>Welcome Back!</h1>
           <p style={styles.subtitle}>Sign in to continue to LASU Smart Campus</p>
         </div>

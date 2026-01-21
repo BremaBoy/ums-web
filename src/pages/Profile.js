@@ -192,9 +192,9 @@ const Profile = () => {
       <div style={styles.section}>
         <div style={styles.sectionTitle}>Support & Legal</div>
         <div style={styles.card}>
-            <SettingItem icon={IoHelpBuoyOutline} title="Help & Support" color="#FF9800" />
-            <SettingItem icon={IoShieldCheckmarkOutline} title="Privacy Policy" color="#607D8B" />
-            <SettingItem icon={IoInformationCircleOutline} title="About App" color="#795548" />
+            <SettingItem icon={IoHelpBuoyOutline} title="Help & Support" color="#FF9800" onClick={() => navigate('/help-support')} />
+            <SettingItem icon={IoShieldCheckmarkOutline} title="Privacy Policy" color="#607D8B" onClick={() => navigate('/privacy-policy')} />
+            <SettingItem icon={IoInformationCircleOutline} title="About App" color="#795548" onClick={() => alert('LASU UMS v1.0.4')} />
         </div>
       </div>
 

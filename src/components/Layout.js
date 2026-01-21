@@ -104,7 +104,7 @@ const LayoutComponent = ({ children }) => {
     <div style={styles.container}>
       <div style={styles.sidebar}>
         <div style={styles.logo}>
-          <img src="/logo.png" alt="" style={styles.logoImg} onError={(e) => e.target.style.display='none'}/>
+          <img src="/assets/lasu-logo.png" alt="" style={styles.logoImg} onError={(e) => e.target.style.display='none'}/>
           LASU UMS
         </div>
         <nav style={styles.nav}>

@@ -7,6 +7,8 @@ import Classes from './pages/Classes';
 import Payments from './pages/Payments';
 import Results from './pages/Results';
 import Profile from './pages/Profile';
+import HelpSupport from './pages/HelpSupport';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import './index.css';
 
 import ForgotPassword from './pages/ForgotPassword';
@@ -28,6 +30,8 @@ function App() {
             <Route path="/payments" element={<Payments />} />
             <Route path="/results" element={<Results />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/help-support" element={<HelpSupport />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Route>
 
         {/* Smart Root Redirect */}
