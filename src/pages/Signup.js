@@ -201,7 +201,7 @@ const Signup = () => {
                 </button>
 
                 <div style={styles.header}>
-                    <img src="/assets/lasu-logo.png" alt="LASU Logo" style={{ height: '80px', width: '80px', margin: '0 auto 16px', display: 'block' }} />
+                    <img src="/assets/lasu-logo.png" alt="LASU Logo" style={{ height: '80px', width: 'auto', maxWidth: '100%', margin: '0 auto 16px', display: 'block', objectFit: 'contain' }} />
                     <h1 style={styles.title}>Create Account</h1>
                     <p style={styles.subtitle}>Join the LASU Smart Campus community</p>
                 </div>

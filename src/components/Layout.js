@@ -48,7 +48,9 @@ const LayoutComponent = ({ children }) => {
     },
     logoImg: {
        height: '32px',
-       width: '32px',
+       width: 'auto',
+       maxWidth: '50px',
+       objectFit: 'contain',
     },
     nav: {
       display: 'flex',

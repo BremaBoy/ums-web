@@ -89,9 +89,11 @@ const Login = () => {
     },
     logo: {
       height: '100px',
-      width: '100px',
+      width: 'auto',
+      maxWidth: '100px',
       margin: '0 auto 20px',
       display: 'block',
+      objectFit: 'contain',
     },
     welcomeText: {
       fontSize: '28px',
